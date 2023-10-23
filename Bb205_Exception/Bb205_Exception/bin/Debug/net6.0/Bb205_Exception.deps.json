@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Bb205_Exception/1.0.0": {
+        "runtime": {
+          "Bb205_Exception.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bb205_Exception/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

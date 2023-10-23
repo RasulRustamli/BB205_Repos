@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\bin\Debug\net6.0\BB205_Static_class.exe
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\bin\Debug\net6.0\BB205_Static_class.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\bin\Debug\net6.0\BB205_Static_class.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\bin\Debug\net6.0\BB205_Static_class.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\bin\Debug\net6.0\BB205_Static_class.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\BB205_Static_class.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\BB205_Static_class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\BB205_Static_class.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\BB205_Static_class.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\BB205_Static_class.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\BB205_Static_class.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\refint\BB205_Static_class.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\BB205_Static_class.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\BB205_Static_class.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Static_class\BB205_Static_class\obj\Debug\net6.0\ref\BB205_Static_class.dll

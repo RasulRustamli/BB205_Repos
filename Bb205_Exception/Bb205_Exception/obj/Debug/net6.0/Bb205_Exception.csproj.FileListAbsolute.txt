@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\bin\Debug\net6.0\Bb205_Exception.exe
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\bin\Debug\net6.0\Bb205_Exception.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\bin\Debug\net6.0\Bb205_Exception.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\bin\Debug\net6.0\Bb205_Exception.dll
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\bin\Debug\net6.0\Bb205_Exception.pdb
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\Bb205_Exception.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\Bb205_Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\Bb205_Exception.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\Bb205_Exception.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\Bb205_Exception.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\Bb205_Exception.dll
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\refint\Bb205_Exception.dll
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\Bb205_Exception.pdb
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\Bb205_Exception.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\Bb205_Exception\Bb205_Exception\obj\Debug\net6.0\ref\Bb205_Exception.dll
