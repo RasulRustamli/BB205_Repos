@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\bin\Debug\net6.0\BB105_Custom_Generic.exe
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\bin\Debug\net6.0\BB105_Custom_Generic.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\bin\Debug\net6.0\BB105_Custom_Generic.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\bin\Debug\net6.0\BB105_Custom_Generic.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\bin\Debug\net6.0\BB105_Custom_Generic.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\BB105_Custom_Generic.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\BB105_Custom_Generic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\BB105_Custom_Generic.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\BB105_Custom_Generic.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\BB105_Custom_Generic.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\BB105_Custom_Generic.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\refint\BB105_Custom_Generic.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\BB105_Custom_Generic.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\BB105_Custom_Generic.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB105_Custom_Generic\BB105_Custom_Generic\obj\Debug\net6.0\ref\BB105_Custom_Generic.dll
