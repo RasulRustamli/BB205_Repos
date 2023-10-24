@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\bin\Debug\net6.0\BB205_Collections.exe
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\bin\Debug\net6.0\BB205_Collections.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\bin\Debug\net6.0\BB205_Collections.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\bin\Debug\net6.0\BB205_Collections.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\bin\Debug\net6.0\BB205_Collections.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\BB205_Collections.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\BB205_Collections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\BB205_Collections.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\BB205_Collections.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\BB205_Collections.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\BB205_Collections.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\refint\BB205_Collections.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\BB205_Collections.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\BB205_Collections.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Collections\BB205_Collections\obj\Debug\net6.0\ref\BB205_Collections.dll
