@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\bin\Debug\net6.0\bb205_acces.exe
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\bin\Debug\net6.0\bb205_acces.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\bin\Debug\net6.0\bb205_acces.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\bin\Debug\net6.0\bb205_acces.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\bin\Debug\net6.0\bb205_acces.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\bb205_acces.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\bb205_acces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\bb205_acces.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\bb205_acces.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\bb205_acces.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\bb205_acces.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\refint\bb205_acces.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\bb205_acces.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\bb205_acces.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb205_acces\bb205_acces\obj\Debug\net6.0\ref\bb205_acces.dll

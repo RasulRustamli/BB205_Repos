@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BB205_Thread_Task/1.0.0": {
+        "runtime": {
+          "BB205_Thread_Task.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BB205_Thread_Task/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
