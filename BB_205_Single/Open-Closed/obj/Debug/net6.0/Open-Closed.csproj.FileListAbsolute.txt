@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\bin\Debug\net6.0\Open-Closed.exe
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\bin\Debug\net6.0\Open-Closed.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\bin\Debug\net6.0\Open-Closed.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\bin\Debug\net6.0\Open-Closed.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\bin\Debug\net6.0\Open-Closed.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\Open-Closed.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\Open-Closed.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\Open-Closed.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\Open-Closed.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\Open-Closed.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\Open-Closed.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\refint\Open-Closed.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\Open-Closed.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\Open-Closed.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Open-Closed\obj\Debug\net6.0\ref\Open-Closed.dll

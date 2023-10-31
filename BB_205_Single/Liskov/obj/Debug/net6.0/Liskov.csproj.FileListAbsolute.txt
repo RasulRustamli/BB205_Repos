@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\bin\Debug\net6.0\Liskov.exe
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\bin\Debug\net6.0\Liskov.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\bin\Debug\net6.0\Liskov.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\bin\Debug\net6.0\Liskov.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\bin\Debug\net6.0\Liskov.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\Liskov.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\Liskov.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\Liskov.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\Liskov.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\Liskov.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\Liskov.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\refint\Liskov.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\Liskov.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\Liskov.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB_205_Single\Liskov\obj\Debug\net6.0\ref\Liskov.dll
