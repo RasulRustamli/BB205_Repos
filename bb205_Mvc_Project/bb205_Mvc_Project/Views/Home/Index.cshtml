@@ -1,0 +1,23 @@
+﻿@using bb205_Mvc_Project.Models
+
+<p>@ViewData["number"]</p>
+<p>@ViewBag.Num</p>
+
+<ul>
+   @* @foreach(var item in ViewBag.Students)
+    {
+        <li>@item.Name</li>
+    }*@
+
+    @foreach (var item in TempData["data"] as List<Student>)
+    {
+        <li>@item.Name</li>
+    }
+
+
+</ul>
+
+<h3>Index</h3>
+
+
+
