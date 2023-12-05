@@ -1,5 +1,6 @@
 ﻿using BB205_Pronia.DAL;
 using BB205_Pronia.Models;
+using BB205_Pronia.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,15 +17,32 @@ namespace BB205_Pronia.Controllers
 
         public IActionResult Detail(int? id)
         {
+            string cookie = Request.Cookies[".AspNetCore.Session"];
+            string session = HttpContext.Session.GetString("Name");
+           
+            if (session == null) return NotFound();
+
+
             Product product = _db.Products
+                .Where(p => p.IsDeleted == false)
                 .Include(p => p.Category)
                 .Include(p => p.ProductImages)
                 .Include(p => p.ProductTags)
                 .ThenInclude(pt => pt.Tag)
                 .FirstOrDefault(product => product.Id == id);
-                
+                if(product==null)
+            {
+                return NotFound();
+            }
+            DetailVm detailVm = new DetailVm()
+            {
+                Product = product,
+                Products = _db.Products.Where(p => p.IsDeleted == false).Include(p => p.ProductImages).Include(p => p.Category).Where(p=>p.CategoryId==product.CategoryId&&p.Id!=product.Id).ToList()
+            };
 
-            return View(product);
+            return View(detailVm);
         }
+
+
     }
 }

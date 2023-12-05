@@ -16,6 +16,9 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+        <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css
+" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="~/manage/css/sb-admin-2.min.css" rel="stylesheet">
@@ -72,7 +75,7 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pages:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" asp-action="Index" asp-controller="Product">Product</a>
                        
                     </div>
                 </div>
@@ -354,9 +357,13 @@
 
     <!-- Custom scripts for all pages-->
     <script src="~/manage/js/sb-admin-2.min.js"></script>
+    <script src="~/manage/js/main.js"></script>
 
     <!-- Page level plugins -->
     <script src="~/manage/vendor/chart.js/Chart.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js
+"></script>
 
     <!-- Page level custom scripts -->
     <script src="~/manage/js/demo/chart-area-demo.js"></script>

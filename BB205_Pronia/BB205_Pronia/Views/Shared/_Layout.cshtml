@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using BB205_Pronia.Services
+
+
+@inject LayoutService layoutService
+@{
+    Dictionary<string, string> setting = await layoutService.GetSetting();
+    List<BasketItemVm> basketItems = await layoutService.GetBasket();
+    double Total = 0;
+}
+<!DOCTYPE html>
 <html lang="zxx">
   <head>
     <meta charset="UTF-8" />
@@ -19,7 +28,9 @@
 
     <!-- CSS
     ============================================ -->
-
+     <link href="
+/cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css
+stylesheet">
     <link rel="stylesheet" href="~/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="~/assets/css/Pe-icon-7-stroke.css" />
@@ -113,11 +124,11 @@
                 <div class="header-middle-wrap position-relative">
                   <div class="header-contact d-none d-lg-flex">
                     <i class="pe-7s-call"></i>
-                    <a href="tel://+00-123-456-789">+00 123 456 789</a>
+                    <a href="tel://@setting["Phone"]">@setting["Phone"]</a>
                   </div>
 
                   <a href="index.html" class="header-logo">
-                    <img src="~/assets/images/logo/dark.png" alt="Header Logo" />
+                    <img src="~/assets/images/logo/@setting["Logo"]" alt="Header Logo" />
                   </a>
 
                   <div class="header-right">
@@ -129,7 +140,7 @@
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal"
                         >
-                          <i class="pe-7s-search"></i>
+                          @Html.Raw(@setting["Icon"])
                         </a>
                       </li>
                       <li class="dropdown d-none d-lg-block">
@@ -167,7 +178,7 @@
                       <li class="minicart-wrap me-3 me-lg-0">
                         <a href="#miniCart" class="minicart-btn toolbar-btn">
                           <i class="pe-7s-shopbag"></i>
-                          <span class="quantity">3</span>
+                          <span class="quantity">@basketItems.Count</span>
                         </a>
                       </li>
                       <li class="mobile-menu_wrap d-block d-lg-none">
@@ -941,7 +952,10 @@
                 ></a>
               </div>
               <ul class="minicart-list">
-                <li class="minicart-product">
+                @foreach (var item in basketItems)
+                            {
+                                Total += item.Count * item.Price;
+                                <li class="minicart-product">
                   <a class="product-item_remove" href="#"
                     ><i
                       class="pe-7s-close"
@@ -959,7 +973,7 @@
                   >
                     <img
                       class="img-full"
-                      src="~/assets/images/product/small-size/2-1-70x78.png"
+                      src="~/Upload/Product/@item.ImgUrl"
                       alt="Product Image"
                     />
                   </a>
@@ -967,78 +981,18 @@
                     <a
                       class="product-item_title"
                       href="single-product-variable.html"
-                      >American Marigold</a
+                      >@item.Name</a
                     >
-                    <span class="product-item_quantity">1 x $23.45</span>
+                    <span class="product-item_quantity">@item.Count x $@item.Price</span>
                   </div>
                 </li>
-                <li class="minicart-product">
-                  <a class="product-item_remove" href="#"
-                    ><i
-                      class="pe-7s-close"
-                      data-tippy="Remove"
-                      data-tippy-inertia="true"
-                      data-tippy-animation="shift-away"
-                      data-tippy-delay="50"
-                      data-tippy-arrow="true"
-                      data-tippy-theme="sharpborder"
-                    ></i
-                  ></a>
-                  <a
-                    href="single-product-variable.html"
-                    class="product-item_img"
-                  >
-                    <img
-                      class="img-full"
-                      src="~/assets/images/product/small-size/2-2-70x78.png"
-                      alt="Product Image"
-                    />
-                  </a>
-                  <div class="product-item_content">
-                    <a
-                      class="product-item_title"
-                      href="single-product-variable.html"
-                      >Black Eyed Susan</a
-                    >
-                    <span class="product-item_quantity">1 x $25.45</span>
-                  </div>
-                </li>
-                <li class="minicart-product">
-                  <a class="product-item_remove" href="#">
-                    <i
-                      class="pe-7s-close"
-                      data-tippy="Remove"
-                      data-tippy-inertia="true"
-                      data-tippy-animation="shift-away"
-                      data-tippy-delay="50"
-                      data-tippy-arrow="true"
-                      data-tippy-theme="sharpborder"
-                    ></i>
-                  </a>
-                  <a
-                    href="single-product-variable.html"
-                    class="product-item_img"
-                  >
-                    <img
-                      class="img-full"
-                      src="~/assets/images/product/small-size/2-3-70x78.png"
-                      alt="Product Image"
-                    />
-                  </a>
-                  <div class="product-item_content">
-                    <a
-                      class="product-item_title"
-                      href="single-product-variable.html"
-                      >Bleeding Heart</a
-                    >
-                    <span class="product-item_quantity">1 x $30.45</span>
-                  </div>
-                </li>
+                }
+               
               </ul>
             </div>
             <div class="minicart-item_total">
               <span>Subtotal</span>
-              <span class="ammount">$79.35</span>
+              <span class="ammount">$@Total</span>
             </div>
             <div class="group-btn_wrap d-grid gap-2">
               <a href="cart.html" class="btn btn-dark">View Cart</a>
@@ -1051,193 +1005,7 @@
       <!-- Main Header Area End Here -->
         @RenderBody()
 <!-- Begin Footer Area -->
-      <div
-        class="footer-area"
-        data-bg-image="~/assets/images/footer/bg/1-1920x465.jpg"
-      >
-        <div class="footer-top section-space-top-100 pb-60">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="footer-widget-item">
-                  <div class="footer-widget-logo">
-                    <a href="index.html">
-                      <img src="~/assets/images/logo/dark.png" alt="Logo" />
-                    </a>
-                  </div>
-                  <p class="footer-widget-desc">
-                    Lorem ipsum dolor sit amet, consec adipisl elit, sed do
-                    eiusmod tempor
-                    <br />
-                    incidio ut labore et dolore magna.
-                  </p>
-                  <div class="social-link with-border">
-                    <ul>
-                      <li>
-                        <a
-                          href="#"
-                          data-tippy="Facebook"
-                          data-tippy-inertia="true"
-                          data-tippy-animation="shift-away"
-                          data-tippy-delay="50"
-                          data-tippy-arrow="true"
-                          data-tippy-theme="sharpborder"
-                        >
-                          <i class="fa fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          data-tippy="Twitter"
-                          data-tippy-inertia="true"
-                          data-tippy-animation="shift-away"
-                          data-tippy-delay="50"
-                          data-tippy-arrow="true"
-                          data-tippy-theme="sharpborder"
-                        >
-                          <i class="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          data-tippy="Pinterest"
-                          data-tippy-inertia="true"
-                          data-tippy-animation="shift-away"
-                          data-tippy-delay="50"
-                          data-tippy-arrow="true"
-                          data-tippy-theme="sharpborder"
-                        >
-                          <i class="fa fa-pinterest"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          data-tippy="Dribbble"
-                          data-tippy-inertia="true"
-                          data-tippy-animation="shift-away"
-                          data-tippy-delay="50"
-                          data-tippy-arrow="true"
-                          data-tippy-theme="sharpborder"
-                        >
-                          <i class="fa fa-dribbble"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-4 pt-40">
-                <div class="footer-widget-item">
-                  <h3 class="footer-widget-title">Useful Links</h3>
-                  <ul class="footer-widget-list-item">
-                    <li>
-                      <a href="#">About Pronia</a>
-                    </li>
-                    <li>
-                      <a href="#">How to shop</a>
-                    </li>
-                    <li>
-                      <a href="#">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="#">Contact us</a>
-                    </li>
-                    <li>
-                      <a href="#">Log in</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-4 pt-40">
-                <div class="footer-widget-item">
-                  <h3 class="footer-widget-title">My Account</h3>
-                  <ul class="footer-widget-list-item">
-                    <li>
-                      <a href="#">Sign In</a>
-                    </li>
-                    <li>
-                      <a href="#">View Cart</a>
-                    </li>
-                    <li>
-                      <a href="#">My Wishlist</a>
-                    </li>
-                    <li>
-                      <a href="#">Track My Order</a>
-                    </li>
-                    <li>
-                      <a href="#">Help</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-4 pt-40">
-                <div class="footer-widget-item">
-                  <h3 class="footer-widget-title">Our Service</h3>
-                  <ul class="footer-widget-list-item">
-                    <li>
-                      <a href="#">Payment Methods</a>
-                    </li>
-                    <li>
-                      <a href="#">Money Guarantee!</a>
-                    </li>
-                    <li>
-                      <a href="#">Returns</a>
-                    </li>
-                    <li>
-                      <a href="#">Shipping</a>
-                    </li>
-                    <li>
-                      <a href="#">Privacy Policy</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 pt-40">
-                <div class="footer-contact-info">
-                  <h3 class="footer-widget-title">Got Question? Call Us</h3>
-                  <a class="number" href="tel://123-456-789">123 456 789</a>
-                  <div class="address">
-                    <ul>
-                      <li>Your Address Goes Here</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="payment-method">
-                  <a href="#">
-                    <img
-                      src="~/assets/images/website-images/1.png"
-                      alt="Payment Method"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="copyright">
-                  <span class="copyright-text"
-                    >© 2021 Pronia Made with
-                    <i class="fa fa-heart text-danger"></i> by
-                    <a
-                      href="https://hasthemes.com/"
-                      rel="noopener"
-                      target="_blank"
-                      >HasThemes</a
-                    >
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      @await Component.InvokeAsync("Footer");
       <!-- Footer Area End Here -->
 
       <!-- Begin Modal Area -->
@@ -1465,9 +1233,12 @@
     <script src="~/assets/js/plugins/ion.rangeSlider.min.js"></script>
     <script src="~/assets/js/plugins/mailchimp-ajax.js"></script>
     <script src="~/assets/js/plugins/jquery.counterup.js"></script>
-
+       <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js
+"></script>
     <!--Main JS (Common Activation Codes)-->
     <script src="~/assets/js/main.js"></script>
+     <script src="~/assets/js/Basket.js"></script>
   </body>
 </html>
 

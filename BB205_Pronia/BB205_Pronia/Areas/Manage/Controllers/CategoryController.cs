@@ -66,7 +66,10 @@ namespace BB205_Pronia.Areas.Manage.Controllers
         }
 
 
-
+        public string GetString()
+        {
+            return "";
+        }
 
     }
 }

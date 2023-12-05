@@ -16,10 +16,19 @@ public class HomeController:Controller
 
     public  async Task<IActionResult> Index()
     {
+        //Response.Cookies.Append("Name", "Miraga", new CookieOptions()
+        //{
+        //    MaxAge = TimeSpan.FromSeconds(5)
+        //});
+
+        //HttpContext.Session.SetString("Name", "Ilkin");
+
+
+
         HomeVm homeVm = new HomeVm()
         {
             Sliders=await _db.Sliders.ToListAsync(),
-            Products = await _db.Products.Include(p => p.ProductImages).ToListAsync()
+            Products = await _db.Products.Where(p => p.IsDeleted == false).Include(p => p.ProductImages).ToListAsync()
         };
 
         return View(homeVm);

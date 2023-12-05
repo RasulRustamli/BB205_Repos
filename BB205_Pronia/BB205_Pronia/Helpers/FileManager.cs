@@ -3,7 +3,14 @@ namespace BB205_Pronia.Helpers
 {
     public static class FileManager
     {
-
+        public static bool CheckType(this IFormFile file,string type)
+        {
+            return file.ContentType.Contains(type);
+        }
+        public static bool CheckLength(this IFormFile file, int length)
+        {
+            return file.Length<=length*1024;
+        }
         public static string Upload(this IFormFile file,string envPath,string folderName)
         {
             string filname = file.FileName;
@@ -22,7 +29,7 @@ namespace BB205_Pronia.Helpers
             return filname;
         }
 
-        public static void DeleteFile(string imgUrl,string envPath,string folderName )
+        public static void DeleteFile(this string imgUrl,string envPath,string folderName )
         {
             string path = envPath + folderName + imgUrl;
 
