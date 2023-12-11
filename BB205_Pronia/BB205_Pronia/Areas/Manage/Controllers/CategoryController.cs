@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace BB205_Pronia.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    
     public class CategoryController : Controller
     {
         AppDbContext _context;
@@ -14,18 +15,19 @@ namespace BB205_Pronia.Areas.Manage.Controllers
         {
             _context = context;
         }
-
+      [Authorize(Roles ="Admin,Moderator")]
         public IActionResult Index()
         {
             List<Category> categories = _context.Categories.Include(p=>p.Products).ToList();
             return View(categories);
         }
-       
+       [Authorize(Roles ="Admin,Moderator")]
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
+        [Authorize(Roles = "Admin,Moderator")]
         public IActionResult Create(Category category)
         {
             if(!ModelState.IsValid)
@@ -36,6 +38,7 @@ namespace BB205_Pronia.Areas.Manage.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
+        [Authorize(Roles = "Admin")]
 
         public IActionResult Delete(int id)
         {
@@ -44,13 +47,16 @@ namespace BB205_Pronia.Areas.Manage.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
-        
+       [Authorize(Roles ="Admin")]
+
         public IActionResult Update(int id)
         {
             Category category=_context.Categories.Find(id);
             return View(category);
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+
         public IActionResult Update(Category newCategory)
         {
 

@@ -263,3 +263,8 @@ C:\Users\rasul\OneDrive\Masaüstü\BB205_Pronia\BB205_Pronia\bin\Debug\net6.0\tr
 C:\Users\rasul\OneDrive\Masaüstü\BB205_Pronia\BB205_Pronia\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\rasul\OneDrive\Masaüstü\BB205_Pronia\BB205_Pronia\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\rasul\OneDrive\Masaüstü\BB205_Pronia\BB205_Pronia\obj\Debug\net6.0\BB205_Pronia.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Pronia\BB205_Pronia\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Pronia\BB205_Pronia\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Pronia\BB205_Pronia\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Pronia\BB205_Pronia\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB205_Pronia\BB205_Pronia\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

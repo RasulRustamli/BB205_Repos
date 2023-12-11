@@ -1,13 +1,10 @@
 ﻿
-
-
-
-
 using System.IO;
 
 namespace BB205_Pronia.Areas.Manage.Controllers
 {
     [Area("manage")]
+    [Authorize]
     public class SliderController:Controller
     {
         AppDbContext _context;

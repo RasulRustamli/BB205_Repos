@@ -1,9 +1,11 @@
 ﻿using BB205_Pronia.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BB205_Pronia.DAL;
 
-public class AppDbContext:DbContext
+public class AppDbContext:IdentityDbContext<AppUser>
 {
     public AppDbContext(DbContextOptions<AppDbContext> options):base(options)
     {

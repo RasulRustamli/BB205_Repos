@@ -1,9 +1,11 @@
 ﻿using BB205_Pronia.Areas.Manage.ViewModels.Product;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 namespace BB205_Pronia.Areas.Manage.Controllers
 {
     [Area("manage")]
+    [Authorize]
     public class ProductController : Controller
     {
         AppDbContext _context { get; set; }
