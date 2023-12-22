@@ -1,0 +1,17 @@
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\bin\Debug\net6.0\BlogApp.DAL.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\bin\Debug\net6.0\BlogApp.DAL.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\bin\Debug\net6.0\BlogApp.DAL.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\bin\Debug\net6.0\BlogApp.DAL.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\bin\Debug\net6.0\BlogApp.Core.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\bin\Debug\net6.0\BlogApp.Core.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\BlogApp.DAL.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\BlogApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\BlogApp.DAL.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\BlogApp.DAL.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\BlogApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\BlogApp.DAL.csproj.CopyComplete
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\BlogApp.DAL.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\refint\BlogApp.DAL.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\BlogApp.DAL.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\BlogApp.DAL.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.DAL\obj\Debug\net6.0\ref\BlogApp.DAL.dll
