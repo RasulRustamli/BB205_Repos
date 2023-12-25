@@ -10,8 +10,11 @@ namespace BlogApp.Business.Services.Interfaces
 {
     public interface ICategoryService
     {
-        Task<ICollection<Category>> GetAllAsync();
+        Task<ICollection<CategoryListItemDto>> GetAllAsync();
 
         Task<bool> CreateAsync(CategoryCreateDto categoryDto);
+        Task<CategoryDetailDto> GetByIdAsync(int id);
+        Task<bool> Update(CategoryUpdateDto categoryDto);
+        Task Delete(int id);
     }
 }

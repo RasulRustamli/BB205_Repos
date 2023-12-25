@@ -1,4 +1,5 @@
 using BlogApp.Business.DTOs.CategoryDtos;
+using BlogApp.Business.Profiles;
 using BlogApp.Business.Services.Implementations;
 using BlogApp.Business.Services.Interfaces;
 using BlogApp.DAL.Context;
@@ -16,6 +17,7 @@ builder.Services.AddControllers().AddFluentValidation(opt =>
 {
     opt.RegisterValidatorsFromAssembly(typeof(CategoryCreateDtoValidation).Assembly);
 });
+builder.Services.AddAutoMapper(typeof(CategoryMapProfiles).Assembly);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

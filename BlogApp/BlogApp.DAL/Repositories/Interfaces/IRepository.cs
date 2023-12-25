@@ -18,6 +18,9 @@ namespace BlogApp.DAL.Repositories.Interfaces
             , params string[] includes);
 
         Task CreateAsync(TEntity entity);
-        Task<int> SaveChangesAsync();  
+        Task<TEntity> FindById(int id);
+        Task<bool> IsExist(int id);
+        Task<int> SaveChangesAsync();
+        Task Remove(int id);
     }
 }

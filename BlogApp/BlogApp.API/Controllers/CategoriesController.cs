@@ -1,4 +1,6 @@
 ﻿using BlogApp.Business.DTOs.CategoryDtos;
+using BlogApp.Business.Exceptions.Category;
+using BlogApp.Business.Exceptions.Common;
 using BlogApp.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +32,56 @@ namespace BlogApp.API.Controllers
                 return StatusCode(StatusCodes.Status201Created);
             }
             return StatusCode(StatusCodes.Status409Conflict);
+        }
+        [HttpPut]
+        public async Task<IActionResult> Update([FromForm]CategoryUpdateDto categoryDto)
+        {
+            try
+            {
+                if (await _service.Update(categoryDto)) return Ok();
+                return StatusCode(StatusCodes.Status502BadGateway);
+            }
+            catch (NegativeIdException ex)
+            {
+
+                return StatusCode(StatusCodes.Status400BadRequest, ex.Message);
+            }
+            catch (CategoryNotFoundException ex)
+            {
+
+                return StatusCode(StatusCodes.Status404NotFound, ex.Message);
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status400BadRequest, ex.Message);
+            }
+
+
+        }
+        [HttpDelete]
+        public async Task<IActionResult> Delete([FromForm]int id)
+        {
+            try
+            {
+               await _service.Delete(id);
+                return Ok();
+            }
+            catch (NegativeIdException ex)
+            {
+
+                return StatusCode(StatusCodes.Status400BadRequest, ex.Message);
+            }
+            catch (CategoryNotFoundException ex)
+            {
+
+                return StatusCode(StatusCodes.Status404NotFound, ex.Message);
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status400BadRequest, ex.Message);
+            }
         }
     }
 }

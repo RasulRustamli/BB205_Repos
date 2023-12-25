@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "BJEG4H3TU6nLD0CHG0CeVdT8AkgmGbu77VUfi4iun1kWiMQ3nuciR+NT4qRa+bFDepsiziT8g9lWAK4s+GdC0w==",
+  "dgSpecHash": "9uPV926MCBPl7MNpSl3J2/aiEslpt0D7Dj8ySMMAC+e+prGcSkczuxMheQ/x++A+PDudZwU9LYofnAu4EPQw9g==",
   "success": true,
   "projectFilePath": "C:\\Users\\rasul\\OneDrive\\Masaüstü\\bb205\\BlogApp\\BlogApp.Business\\BlogApp.Business.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rasul\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\rasul\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\rasul\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\rasul\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\rasul\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\rasul\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
-    "C:\\Users\\rasul\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\rasul\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\rasul\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\rasul\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\rasul\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.25\\microsoft.entityframeworkcore.6.0.25.nupkg.sha512",

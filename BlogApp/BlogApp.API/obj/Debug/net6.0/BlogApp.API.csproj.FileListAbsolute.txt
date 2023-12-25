@@ -70,3 +70,5 @@ C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\Mi
 C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

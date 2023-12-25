@@ -8,6 +8,6 @@ namespace BlogApp.Business.DTOs.CategoryDtos
 {
     public class CategoryListItemDto
     {
-
+        public string Name { get; set; }
     }
 }

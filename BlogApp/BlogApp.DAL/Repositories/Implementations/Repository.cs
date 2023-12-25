@@ -57,5 +57,20 @@ namespace BlogApp.DAL.Repositories.Implementations
         {
             return await _context.SaveChangesAsync();
         }
+
+        public async Task<TEntity> FindById(int id)
+        {
+            return await Table.FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<bool> IsExist(int id)
+        {
+           return await Table.AnyAsync(e => e.Id == id && !e.IsDeleted);
+        }
+
+        public async Task Remove(int id)
+        {
+            (await FindById(id)).IsDeleted= true;
+        }
     }
 }
