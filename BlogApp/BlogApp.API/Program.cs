@@ -1,27 +1,35 @@
+using BlogApp.Business;
 using BlogApp.Business.DTOs.CategoryDtos;
 using BlogApp.Business.Profiles;
 using BlogApp.Business.Services.Implementations;
 using BlogApp.Business.Services.Interfaces;
+using BlogApp.Core.Entities;
 using BlogApp.DAL.Context;
 using BlogApp.DAL.Repositories.Implementations;
 using BlogApp.DAL.Repositories.Interfaces;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
+
 builder.Services.AddControllers().AddFluentValidation(opt =>
 {
     opt.RegisterValidatorsFromAssembly(typeof(CategoryCreateDtoValidation).Assembly);
 });
+
+builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+{
+    opt.Password.RequireNonAlphanumeric = false;
+}).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddAutoMapper(typeof(CategoryMapProfiles).Assembly);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddServices();
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
