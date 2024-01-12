@@ -10,5 +10,6 @@ namespace BlogApp.Business.Services.Interfaces
     public interface IAccountService
     {
         Task Register(RegisterDto registerDto);
+        Task<TokenResponseDto> LoginAsync(LoginDto dto);
     }
 }

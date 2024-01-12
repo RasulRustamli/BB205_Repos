@@ -58,9 +58,19 @@ namespace BlogApp.DAL.Repositories.Implementations
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<TEntity> FindById(int id)
+        public async Task<TEntity> FindById(int id,bool isDelete=false, params string[] includes)
         {
-            return await Table.FirstOrDefaultAsync(x => x.Id == id);
+            IQueryable<TEntity> query = Table.Where(c=>c.Id==id&&c.IsDeleted==isDelete);
+            if (includes is not null&&query.Count()>0)
+            {
+                for (int i = 0; i < includes.Length; i++)
+                {
+                    query = query.Include(includes[i]);
+                }
+            }
+            
+            var entity = await query.FirstOrDefaultAsync();
+            return entity;
         }
 
         public async Task<bool> IsExist(int id)
@@ -70,7 +80,17 @@ namespace BlogApp.DAL.Repositories.Implementations
 
         public async Task Remove(int id)
         {
-            (await FindById(id)).IsDeleted= true;
+            Table.Remove(await FindById(id));
+        }
+
+        public async Task SoftDelete(int id)
+        {
+            (await FindById(id)).IsDeleted = true;
+        }
+
+        public async Task ReverseSoftDelete(int id)
+        {
+            (await FindById(id,true)).IsDeleted =false;
         }
     }
 }

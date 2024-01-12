@@ -18,9 +18,11 @@ namespace BlogApp.DAL.Repositories.Interfaces
             , params string[] includes);
 
         Task CreateAsync(TEntity entity);
-        Task<TEntity> FindById(int id);
+        Task<TEntity> FindById(int id,bool isDelete=false, params string[] includes);
         Task<bool> IsExist(int id);
         Task<int> SaveChangesAsync();
+        Task SoftDelete(int id);
+        Task ReverseSoftDelete(int id);
         Task Remove(int id);
     }
 }

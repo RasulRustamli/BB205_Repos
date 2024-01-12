@@ -15,11 +15,17 @@ namespace BlogApp.API.Controllers
         {
             _service = service;
         }
-        [HttpPost]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Register(RegisterDto dto)
         {
            await _service.Register(dto);
             return Ok();
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Login(LoginDto dto)
+        {
+            var result=await _service.LoginAsync(dto);
+            return Ok(result);
         }
     }
 }

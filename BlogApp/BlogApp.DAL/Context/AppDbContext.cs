@@ -24,5 +24,8 @@ namespace BlogApp.DAL.Context
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<BlogCategory> BlogCategories { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using BlogApp.Business.Exceptions.Category;
 using BlogApp.Business.Exceptions.Common;
 using BlogApp.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace BlogApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryService _service;
@@ -36,26 +38,10 @@ namespace BlogApp.API.Controllers
         [HttpPut]
         public async Task<IActionResult> Update([FromForm]CategoryUpdateDto categoryDto)
         {
-            try
-            {
+            
                 if (await _service.Update(categoryDto)) return Ok();
                 return StatusCode(StatusCodes.Status502BadGateway);
-            }
-            catch (NegativeIdException ex)
-            {
-
-                return StatusCode(StatusCodes.Status400BadRequest, ex.Message);
-            }
-            catch (CategoryNotFoundException ex)
-            {
-
-                return StatusCode(StatusCodes.Status404NotFound, ex.Message);
-            }
-            catch (Exception ex)
-            {
-
-                return StatusCode(StatusCodes.Status400BadRequest, ex.Message);
-            }
+           
 
 
         }

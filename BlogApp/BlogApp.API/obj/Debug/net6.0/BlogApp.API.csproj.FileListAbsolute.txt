@@ -77,3 +77,4 @@ C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\Mi
 C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb205\BlogApp\BlogApp.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

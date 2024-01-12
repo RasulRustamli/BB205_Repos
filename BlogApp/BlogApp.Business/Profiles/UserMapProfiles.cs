@@ -15,6 +15,8 @@ namespace BlogApp.Business.Profiles
         {
             CreateMap<RegisterDto, AppUser>();
             CreateMap<RegisterDto, AppUser>().ReverseMap();
+            CreateMap<AuthorDto, AppUser>().ReverseMap();
+            CreateMap<AuthorDto, AppUser>();
         }
     }
 }
